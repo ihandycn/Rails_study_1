@@ -43,5 +43,7 @@ group :development, :test do
   gem 'spring'
   
   gem 'redcarpet', '~> 3.1.2'
+  
+  gem 'rest-client'
 end
 

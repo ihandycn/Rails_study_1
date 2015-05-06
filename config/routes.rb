@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
+  get 'neice' => 'neice#main'
+
   get 'welcome/index'
+  
+  get 'articles/test'
+  get 'weixin' => 'weixin#weixin'
   
   resources :articles do
     resources :comments
@@ -59,4 +64,7 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  
+  match "*path", :to => "application#routing_error", :via => :all
+  
 end
