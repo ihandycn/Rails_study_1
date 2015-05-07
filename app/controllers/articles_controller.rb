@@ -19,7 +19,7 @@ class ArticlesController < ApplicationController
         @someone = Article.find_by(id: 4)
         
         puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~[S]"
-        puts render_to_string
+        # puts render_to_string
         puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~[E]"
     end
   
